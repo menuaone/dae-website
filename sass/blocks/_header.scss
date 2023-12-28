@@ -1,0 +1,39 @@
+.header {
+  .offer {
+    background-color: $main;
+    text-align: center;
+
+    color: #f1d3b9;
+
+    & .offer__title {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 27.2px;
+    }
+  }
+}
+
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  .nav__list {
+    display: flex;
+    gap: 28px;
+    & .nav__link {
+      font-size: 18px;
+    }
+  }
+}
+
+.header__logo-link {
+  margin-right: 228px;
+  margin-left: 228px;
+}
+.personal {
+  display: flex;
+  gap: 20px;
+}

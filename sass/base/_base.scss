@@ -1,0 +1,68 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+body {
+  margin: 0;
+  background-color: #f6f4ec;
+  font-family: $font-main;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 70px;
+  overflow-x: hidden;
+
+  @include mediaTablet {
+    padding: 0 70px;
+  }
+
+  @include mediaSTablet {
+    padding: 0 50px;
+  }
+
+  @include mediaPhones {
+    padding: 0 20px;
+  }
+}
+
+/* Custom */
+
+.h2 {
+  font-family: $font-main;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.m--link {
+  color: $main;
+  text-decoration: none;
+  transition: $transition;
+  &:hover {
+    color: $link;
+  }
+}
+
+.m--text {
+  color: $main;
+
+  font-family: $font-main;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.no--scroll {
+  overflow-y: hidden;
+}
+
+.for--mobile {
+  display: none;
+}
+
+.btn--reset {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
