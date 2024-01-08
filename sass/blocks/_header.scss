@@ -1,11 +1,13 @@
 .header {
-  .offer {
+  .shipping {
     background-color: $main;
     text-align: center;
 
     color: #f1d3b9;
 
-    & .offer__title {
+    padding: 11px 0;
+
+    & .shipping__title {
       font-size: 17px;
       font-weight: 400;
       line-height: 27.2px;
@@ -13,13 +15,18 @@
   }
 }
 
-.header__top-row {
+.header__top-row > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 8px 12px;
+
+  background-color: #f6f4ec;
 }
 
 .nav {
+  margin-right: 61px;
+  padding-left: 10px;
   .nav__list {
     display: flex;
     gap: 28px;
@@ -29,11 +36,34 @@
   }
 }
 
-.header__logo-link {
-  margin-right: 228px;
-  margin-left: 228px;
-}
+// .header__logo-link {
+// margin-right: 228px;
+// margin-left: 228px;
+// }
 .personal {
   display: flex;
-  gap: 20px;
+  align-items: center;
+
+  gap: 15px;
+  padding-left: 313px;
+  font-size: 14px;
+}
+
+.screen {
+  width: 100%;
+  height: 435px;
+  position: relative;
+
+  background-image: url(/resources/bcgmain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.screen__btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 55px;
+  @include mybutton($main, $white);
 }

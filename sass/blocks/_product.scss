@@ -1,0 +1,44 @@
+.product {
+  background-color: #f6f4ec;
+
+  &__title {
+    color: $main;
+
+    text-align: center;
+    font-size: 23px;
+    line-height: 170.435%;
+    text-transform: capitalize;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 86px;
+  }
+}
+
+.product__card {
+  color: $main;
+
+  .card__img {
+  }
+
+  .card__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: uppercase;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .card__price {
+    font-size: 16px;
+    line-height: 100%;
+  }
+}

@@ -1,7 +1,7 @@
 // button type style
 
 @mixin mybutton($color_1, $color_2) {
-  padding: 13px 50px;
+  padding: 10px 20px;
   border: 1px solid $color_1;
   border-radius: 4px;
   background-color: $color_1;

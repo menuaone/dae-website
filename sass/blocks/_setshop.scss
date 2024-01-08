@@ -1,0 +1,42 @@
+.setshop {
+  padding: 40px 40px;
+  background-color: $white;
+}
+
+.setshop__inner {
+  position: relative;
+}
+
+.setshop__img-item {
+  margin: 0 auto;
+}
+
+.setshop__content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 1220px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px;
+
+  background-color: #df9b7a;
+
+  &-title {
+    color: #f6f4ec;
+    font-size: 20px;
+    line-height: 160%;
+    text-transform: uppercase;
+  }
+
+  &-link {
+    color: #f6f4ec;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+}
