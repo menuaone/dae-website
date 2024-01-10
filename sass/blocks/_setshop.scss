@@ -1,5 +1,5 @@
 .setshop {
-  padding: 40px 40px;
+  padding: 40px 60px;
   background-color: $white;
 }
 
@@ -9,6 +9,12 @@
 
 .setshop__img-item {
   margin: 0 auto;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+    filter: blur(1px);
+  }
 }
 
 .setshop__content {
@@ -16,7 +22,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  width: 1220px;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;
@@ -38,5 +44,48 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 160%;
+  }
+}
+
+@include mediaTablet {
+  .setshop {
+    padding: 0;
+  }
+  .setshop > .container {
+    padding: 0;
+  }
+
+  .setshop__content {
+    &-title {
+      font-size: 15px;
+    }
+
+    &-link {
+      font-size: 12px;
+    }
+  }
+}
+
+@include mediaSTablet {
+  .setshop {
+    padding: 0;
+  }
+}
+
+@include mediaXSTablet {
+  .setshop {
+    padding: 0px 0px;
+  }
+
+  .setshop__content {
+    padding: 10px;
+
+    &-title {
+      font-size: 10px;
+    }
+
+    &-link {
+      font-size: 15px;
+    }
   }
 }

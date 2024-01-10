@@ -40,3 +40,16 @@
   text-transform: uppercase;
   margin-bottom: 19px;
 }
+
+@include mediaTablet {
+  .footer {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: left;
+    }
+  }
+
+  .footer__flex-left {
+    margin-bottom: 50px;
+  }
+}

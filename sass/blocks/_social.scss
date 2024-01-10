@@ -17,3 +17,12 @@
     justify-content: space-between;
   }
 }
+
+@include mediaTablet {
+  .social {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

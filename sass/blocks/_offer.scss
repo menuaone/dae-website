@@ -18,3 +18,17 @@
     color: $white;
   }
 }
+
+@include mediaXSTablet {
+  .offer {
+    padding: 50px 0;
+    background-color: #a9ae8d;
+    text-align: center;
+  }
+
+  .offer__title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 29px;
+  }
+}

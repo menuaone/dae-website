@@ -16,6 +16,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 
     padding-bottom: 86px;
   }
@@ -25,6 +26,17 @@
   color: $main;
 
   .card__img {
+    filter: blur(0);
+    transition: $transition; /* Время перехода */
+
+    &:hover {
+      filter: blur(1px); /* Размытие изображения */
+      transform: scale(1.01);
+      box-shadow: 6px 5px 10px 1px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 6px 5px 10px 1px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 6px 5px 10px 1px rgba(0, 0, 0, 0.75);
+      cursor: pointer;
+    }
   }
 
   .card__title {
@@ -40,5 +52,20 @@
   .card__price {
     font-size: 16px;
     line-height: 100%;
+  }
+}
+
+@include mediaTablet {
+  .product {
+    &__title {
+      text-align: center;
+    }
+
+    &__inner {
+      justify-content: center;
+      flex-wrap: wrap;
+
+      padding-bottom: 86px;
+    }
   }
 }
